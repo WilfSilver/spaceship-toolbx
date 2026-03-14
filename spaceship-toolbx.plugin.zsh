@@ -41,5 +41,5 @@ spaceship_toolbx() {
     --prefix "$SPACESHIP_TOOLBX_PREFIX" \
     --suffix "$SPACESHIP_TOOLBX_SUFFIX" \
     --symbol "$SPACESHIP_TOOLBX_SYMBOL" \
-    "$name"
+    "$name "
 }
