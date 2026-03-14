@@ -42,7 +42,7 @@ You need to source this plugin somewhere in your dotfiles. Here's how to do it w
 Execute this command to clone this repo into Oh-My-Zsh plugin's folder:
 
 ```zsh
-git clone https://github.com/WilfSilver/spaceship-toolbx.git $ZSH_CUSTOM/plugins/spaceship-section
+git clone https://github.com/WilfSilver/spaceship-toolbx.git $ZSH_CUSTOM/plugins/spaceship-toolbx
 ```
 
 Include `spaceship-toolbx` in Oh-My-Zsh plugins list:
@@ -90,7 +90,7 @@ znap source "WilfSilver/spaceship-toolbx"
 ### [sheldon]
 
 ```toml
-[plugins.spaceship-section]
+[plugins.spaceship-toolbx]
 github = "WilfSilver/spaceship-toolbx"
 ```
 
@@ -98,20 +98,20 @@ github = "WilfSilver/spaceship-toolbx"
 
 If none of the above methods works for you, you can install Spaceship manually.
 
-1. Clone this repo somewhere, for example to `$HOME/.zsh/spaceship-section`.
+1. Clone this repo somewhere, for example to `$HOME/.zsh/spaceship-toolbx`.
 2. Source this section in your `~/.zshrc`.
 
 ### Example
 
 ```zsh
 mkdir -p "$HOME/.zsh"
-git clone --depth=1 https://github.com/WilfSilver/spaceship-toolbx.git "$HOME/.zsh/spaceship-section"
+git clone --depth=1 https://github.com/WilfSilver/spaceship-toolbx.git "$HOME/.zsh/spaceship-toolbx"
 ```
 
 For initializing prompt system add this to your `.zshrc`:
 
 ```zsh title=".zshrc"
-source "~/.zsh/spaceship-section/spaceship-section.plugin.zsh"
+source "~/.zsh/spaceship-toolbx/spaceship-toolbx.plugin.zsh"
 ```
 
 ## Usage
