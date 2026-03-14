@@ -1,20 +1,20 @@
 <h1 align="center">
   😍 + 🚀
-  <br>Spaceship Section<br>
+  <br>Toolbx Spaceship Section<br>
 </h1>
 
 <h4 align="center">
-  A <a href="https://template.com" target="_blank">Foobar</a> section for Spaceship prompt
+  A <a href="https://docs.fedoraproject.org/en-US/atomic-desktops/toolbox" target="_blank">Toolbx</a> section for Spaceship prompt
 </h4>
 
 <p align="center">
-  <a href="https://github.com/spaceship-prompt/spaceship-section/releases">
-    <img src="https://img.shields.io/github/v/release/spaceship-prompt/spaceship-section.svg?style=flat-square"
+  <a href="https://github.com/WilfSilver/spaceship-toolbx/releases">
+    <img src="https://img.shields.io/github/v/release/WilfSilver/spaceship-toolbx.svg?style=flat-square"
       alt="GitHub Release" />
   </a>
 
-  <a href="https://github.com/spaceship-prompt/spaceship-section/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/spaceship-prompt/spaceship-gradle/ci.yaml?style=flat-square"
+  <a href="https://github.com/WilfSilver/spaceship-toolbx/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/WilfSilver/spaceship-toolbx/ci.yaml?style=flat-square"
       alt="GitHub Workflow Status" />
   </a>
 
@@ -31,7 +31,7 @@
   </a>
 </p>
 
-Current Foobar version, through foobar (`😍`).
+Shows your current toolbx in your prompt! It uses `.containerenv` behind the scenes so could work with other systems (but these are not tested).
 
 ## Installing
 
@@ -42,50 +42,56 @@ You need to source this plugin somewhere in your dotfiles. Here's how to do it w
 Execute this command to clone this repo into Oh-My-Zsh plugin's folder:
 
 ```zsh
-git clone https://github.com/spaceship-prompt/spaceship-section.git $ZSH_CUSTOM/plugins/spaceship-section
+git clone https://github.com/WilfSilver/spaceship-toolbx.git $ZSH_CUSTOM/plugins/spaceship-section
 ```
 
-Include `spaceship-section` in Oh-My-Zsh plugins list:
+Include `spaceship-toolbx` in Oh-My-Zsh plugins list:
 
 ```zsh
-plugins=($plugins spaceship-section)
+plugins=($plugins spaceship-toolbx)
 ```
 
 ### [zplug]
 
 ```zsh
-zplug "spaceship-prompt/spaceship-section"
+zplug "WilfSilver/spaceship-toolbx"
 ```
 
 ### [antigen]
 
 ```zsh
-antigen bundle "spaceship-prompt/spaceship-section"
+antigen bundle "WilfSilver/spaceship-toolbx"
 ```
 
 ### [antibody]
 
 ```zsh
-antibody bundle "spaceship-prompt/spaceship-section"
+antibody bundle "WilfSilver/spaceship-toolbx"
 ```
 
 ### [zinit]
 
 ```zsh
-zinit light "spaceship-prompt/spaceship-section"
+zinit light "WilfSilver/spaceship-toolbx"
 ```
 
 ### [zgen]
 
 ```zsh
-zgen load "spaceship-prompt/spaceship-section"
+zgen load "WilfSilver/spaceship-toolbx"
+```
+
+### [znap]
+
+```zsh
+znap source "WilfSilver/spaceship-toolbx"
 ```
 
 ### [sheldon]
 
 ```toml
 [plugins.spaceship-section]
-github = "spaceship-prompt/spaceship-section"
+github = "WilfSilver/spaceship-toolbx"
 ```
 
 ### Manual
@@ -99,7 +105,7 @@ If none of the above methods works for you, you can install Spaceship manually.
 
 ```zsh
 mkdir -p "$HOME/.zsh"
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-section.git "$HOME/.zsh/spaceship-section"
+git clone --depth=1 https://github.com/WilfSilver/spaceship-toolbx.git "$HOME/.zsh/spaceship-section"
 ```
 
 For initializing prompt system add this to your `.zshrc`:
@@ -113,7 +119,7 @@ source "~/.zsh/spaceship-section/spaceship-section.plugin.zsh"
 After installing, add the following line to your `.zshrc` in order to include Ember section in the prompt:
 
 ```zsh
-spaceship add foobar
+spaceship add toolbx
 ```
 
 ## Options
@@ -122,11 +128,10 @@ This section is shown only in directories within a foobar context.
 
 | Variable                   |              Default               | Meaning                              |
 | :------------------------- | :--------------------------------: | ------------------------------------ |
-| `SPACESHIP_FOOBAR_SHOW`   |               `true`               | Show current section                 |
-| `SPACESHIP_FOOBAR_PREFIX` | `$SPACESHIP_PROMPT_DEFAULT_PREFIX` | Prefix before section                |
-| `SPACESHIP_FOOBAR_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after section                 |
-| `SPACESHIP_FOOBAR_SYMBOL` |               `😍·`                | Character to be shown before version |
-| `SPACESHIP_FOOBAR_COLOR`  |             `yellow`               | Color of section                     |
+| `SPACESHIP_TOOLBX_SHOW`    |               `true`               | Show current section                 |
+| `SPACESHIP_TOOLBX_PREFIX`  |                `in`                | Prefix before section                |
+| `SPACESHIP_TOOLBX_SUFFIX`  | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after section                 |
+| `SPACESHIP_TOOLBX_COLOR`   |             `yellow`               | Color of section                     |
 
 ## Contributing
 
@@ -136,7 +141,7 @@ Contribute to this repo by submitting a pull request. Please use [conventional c
 
 ## License
 
-MIT © [Name Surname](http://yourwebsite.com)
+MIT © [Wilf Silver](https://wilfsilver.co.uk)
 
 <!-- References -->
 
@@ -147,3 +152,4 @@ MIT © [Name Surname](http://yourwebsite.com)
 [zinit]: https://github.com/zdharma/zinit
 [zgen]: https://github.com/tarjoilija/zgen
 [sheldon]: https://sheldon.cli.rs/
+[znap]: https://github.com/marlonrichert/zsh-snap
